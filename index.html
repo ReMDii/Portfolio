@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReMDi</title>
+  <meta name="description" content="Portfolio de compétences - BUT Informatique, parcours Administration, Gestion et Exploitation des Données." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body class="min-h-screen">
+
+  <div class="lg:flex">
+
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="lg:sticky lg:top-0 lg:h-screen lg:w-72 shrink-0 bg-ink text-text-hi">
+      <div class="flex h-full flex-col justify-between p-6">
+        <div>
+          <a href="./index.html" class="block font-display text-lg font-bold tracking-tight text-text-hi">
+            Mehdi Bennouna
+          </a>
+          <p class="mt-1 font-mono text-xs text-text-lo">portfolio - 2026</p>
+
+          <nav class="mt-10 space-y-1">
+            <a href="./index.html" class="nav-link is-active">Accueil</a>
+            <a href="./a-propos.html" class="nav-link">À propos</a>
+
+            <div class="pt-4">
+              <p class="px-3 pb-1 font-mono text-[11px] text-text-lo/60">compétences</p>
+              <a href="./competences/developper.html" class="nav-sublink">BC1 · Développer une application</a>
+              <a href="./competences/optimiser.html" class="nav-sublink">BC2 · Optimiser des applications</a>
+              <a href="./competences/administrer.html" class="nav-sublink">BC3 · Administrer un système</a>
+              <a href="./competences/gerer-donnees.html" class="nav-sublink">BC4 · Administrer une BDD</a>
+              <a href="./competences/conduire-projet.html" class="nav-sublink">BC5 · Concevoir un projet SI</a>
+              <a href="./competences/travailler-equipe.html" class="nav-sublink">BC6 · Manager une équipe</a>
+            </div>
+
+            <div class="pt-4">
+              <p class="px-3 pb-1 font-mono text-[11px] text-text-lo/60">missions</p>
+              <a href="./stages/s4.html" class="nav-sublink">Stage - S4</a>
+              <a href="./stages/s6.html" class="nav-sublink">Stage / alternance - S6</a>
+            </div>
+
+            <a href="./projets.html" class="nav-link mt-4">Projets</a>
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </nav>
+        </div>
+
+
+      </div>
+    </aside>
+
+    <!-- ============ MAIN ============ -->
+    <main class="flex-1">
+
+      <!-- Hero -->
+      <section class="border-b border-paper-line bg-ink px-6 py-24 text-text-hi sm:px-12 lg:px-16">
+        <div class="max-w-prose">
+
+
+          <p class="mt-5 text-lg text-text-lo">
+            Ce portfolio documente ma montée en compétences sur trois ans de BUT Informatique, à travers
+            mes stages à la <span class="text-text-hi">DGFiP</span> et au <span class="text-text-hi">Rectorat de l'académie de Lyon</span>, ainsi que mes différents projets.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+
+            <a href="./a-propos.html" class="rounded border border-line px-5 py-2.5 text-sm font-semibold text-text-hi transition-colors hover:border-accent hover:text-accent">
+              À propos de moi
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Aperçu compétences -->
+      <section class="px-6 py-16 sm:px-12 lg:px-16">
+        <div class="max-w-prose">
+          <h2 class="font-display text-2xl font-bold text-ink-text">Les 6 compétences du référentiel</h2>
+          <p class="mt-3 text-ink-muted">
+            Chaque compétence est déclinée sur trois niveaux. Les pages suivantes détaillent les
+            apprentissages critiques mobilisés et la progression entre le stage de S4 et la mission de S6.
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-4 sm:grid-cols-2">
+          <a href="./competences/developper.html" class="card transition-colors hover:border-accent-deep">
+            <span class="tag-mono">BC1  </span>
+            <h3 class="mt-3 font-display font-semibold text-ink-text">Développer une application</h3>
+            <div class="level-meter mt-4">
+              <span class="level-seg is-filled"></span><span class="level-seg is-filled"></span><span class="level-seg"></span>
+            </div>
+          </a>
+          <a href="./competences/optimiser.html" class="card transition-colors hover:border-accent-deep">
+            <span class="tag-mono">BC2</span>
+            <h3 class="mt-3 font-display font-semibold text-ink-text">Optimiser des applications informatiques</h3>
+            <div class="level-meter mt-4">
+              <span class="level-seg is-filled"></span><span class="level-seg is-filled"></span><span class="level-seg"></span>
+            </div>
+          </a>
+          <a href="./competences/administrer.html" class="card transition-colors hover:border-accent-deep">
+            <span class="tag-mono">BC3</span>
+            <h3 class="mt-3 font-display font-semibold text-ink-text">Administrer un système informatique</h3>
+            <div class="level-meter mt-4">
+              <span class="level-seg is-filled"></span><span class="level-seg is-filled"></span><span class="level-seg is-filled"></span>
+            </div>
+          </a>
+          <a href="./competences/gerer-donnees.html" class="card transition-colors hover:border-accent-deep">
+            <span class="tag-mono">BC4</span>
+            <h3 class="mt-3 font-display font-semibold text-ink-text">Administrer une base de données</h3>
+            <div class="level-meter mt-4">
+              <span class="level-seg is-filled"></span><span class="level-seg is-filled"></span><span class="level-seg is-filled"></span>
+            </div>
+          </a>
+          <a href="./competences/conduire-projet.html" class="card transition-colors hover:border-accent-deep">
+            <span class="tag-mono">BC5</span>
+            <h3 class="mt-3 font-display font-semibold text-ink-text">Participer à la conception d'un projet SI</h3>
+            <div class="level-meter mt-4">
+              <span class="level-seg is-filled"></span><span class="level-seg is-filled"></span><span class="level-seg is-filled"></span>
+            </div>
+          </a>
+          <a href="./competences/travailler-equipe.html" class="card transition-colors hover:border-accent-deep">
+            <span class="tag-mono">BC6</span>
+            <h3 class="mt-3 font-display font-semibold text-ink-text">Manager une équipe informatique</h3>
+            <div class="level-meter mt-4">
+              <span class="level-seg is-filled"></span><span class="level-seg is-filled"></span><span class="level-seg is-filled"></span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <footer class="border-t border-paper-line px-6 py-8 sm:px-12 lg:px-16">
+        <p class="font-mono text-xs text-ink-muted">BC = Bloc de Compétence</p>
+      </footer>
+
+    </main>
+  </div>
+
+
+</body>
+</html>

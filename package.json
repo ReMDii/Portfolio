@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-but-info-aged",
+  "version": "1.0.0",
+  "description": "Portfolio de compétences - BUT Informatique parcours AGED",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./css/style.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./css/style.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.13",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47"
+  }
+}

@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-paper text-ink-text font-body antialiased;
+  }
+  ::selection {
+    @apply bg-accent/30 text-ink-text;
+  }
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-accent;
+  }
+}
+
+@layer components {
+  /* Sidebar nav link */
+  .nav-link {
+    @apply block rounded px-3 py-2 text-sm text-text-lo transition-colors hover:bg-white/5 hover:text-text-hi;
+  }
+  .nav-link.is-active {
+    @apply bg-white/5 text-accent;
+  }
+  .nav-sublink {
+    @apply block rounded px-3 py-1.5 text-[13px] text-text-lo/80 transition-colors hover:text-text-hi;
+  }
+
+  /* Competency level meter: 3 segments, genuinely sequential (niveau 1/2/3) */
+  .level-meter {
+    @apply flex gap-1.5;
+  }
+  .level-seg {
+    @apply h-1.5 w-8 rounded-full bg-paper-line;
+  }
+  .level-seg.is-filled {
+    @apply bg-accent-deep;
+  }
+
+  /* Mono tag, used for AC codes / dates / competency codes */
+  .tag-mono {
+    @apply inline-flex items-center rounded border border-paper-line px-2 py-0.5 font-mono text-xs text-ink-muted;
+  }
+
+  .card {
+    @apply rounded-lg border border-paper-line bg-white/60 p-6;
+  }
+
+  .prose-block {
+    @apply max-w-prose;
+  }
+}
